@@ -245,3 +245,4 @@ C:\Users\Aybüke\Desktop\dotnet-store\bin\Debug\net9.0\Microsoft.AspNetCore.Cryp
 C:\Users\Aybüke\Desktop\dotnet-store\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\Aybüke\Desktop\dotnet-store\bin\Debug\net9.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\Aybüke\Desktop\dotnet-store\bin\Debug\net9.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Aybüke\Desktop\dotnet-store\obj\Debug\net9.0\dotnet-store.sourcelink.json

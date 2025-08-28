@@ -29,42 +29,35 @@ public class Urun
     
     [Column("Degerlendirmelerim_Yorum")]
     [StringLength(1000, ErrorMessage = "Değerlendirme en fazla 1000 karakter olabilir")]
-    public string Degerlendirmelerim { get; set; } = null!;
+    public string? Degerlendirmelerim { get; set; }
     
     [Range(0, int.MaxValue, ErrorMessage = "Stok miktarı 0'dan büyük olmalıdır")]
     public int StockQuantity { get; set; }
     
-    [Required(ErrorMessage = "Açıklama zorunludur")]
-    public string FullDescription { get; set; } = null!;
+    public string? FullDescription { get; set; }
     
-    [Required(ErrorMessage = "Yayınevi zorunludur")]
     [StringLength(100, ErrorMessage = "Yayınevi en fazla 100 karakter olabilir")]
-    public string Yayinevi { get; set; } = null!;
+    public string? Yayinevi { get; set; }
     
-    [Required(ErrorMessage = "Marka zorunludur")]
     [StringLength(100, ErrorMessage = "Marka en fazla 100 karakter olabilir")]
-    public string Marka { get; set; } = null!;
+    public string? Marka { get; set; }
     
-    [Required(ErrorMessage = "Medya tipi zorunludur")]
     [StringLength(50, ErrorMessage = "Medya tipi en fazla 50 karakter olabilir")]
-    public string MedyaTipi { get; set; } = null!;
+    public string? MedyaTipi { get; set; }
     
-    [Required(ErrorMessage = "Yazar zorunludur")]
     [StringLength(100, ErrorMessage = "Yazar en fazla 100 karakter olabilir")]
-    public string Yazar { get; set; } = null!;
+    public string? Yazar { get; set; }
     
     [Range(1, short.MaxValue, ErrorMessage = "Kategori ID geçerli olmalıdır")]
     public short TopMostCategoryId { get; set; }
     
-    [Required(ErrorMessage = "Kategori adı zorunludur")]
-    public string TopMostCategoryNames { get; set; } = null!;
+    public string? TopMostCategoryNames { get; set; }
     
     [Range(1, short.MaxValue, ErrorMessage = "Kategori ID geçerli olmalıdır")]
     public short CategoryId { get; set; }
     
-    [Required(ErrorMessage = "Kategori slug zorunludur")]
     [StringLength(100, ErrorMessage = "Kategori slug en fazla 100 karakter olabilir")]
-    public string CategorySlug { get; set; } = null!;
+    public string? CategorySlug { get; set; }
     
     [Range(0, 5, ErrorMessage = "Değerlendirme 0-5 arasında olmalıdır")]
     public short TotalRating { get; set; }
